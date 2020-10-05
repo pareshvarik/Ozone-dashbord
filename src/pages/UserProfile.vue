@@ -41,9 +41,6 @@
 	</div>
 </template>
 <script>
-import EditProfileForm from "./UserProfile/EditProfileForm.vue";
-import UserCard from "./UserProfile/UserCard.vue";
-import MembersCard from "./UserProfile/MembersCard.vue";
 import { PaperTable } from "@/components";
 const tableColumns = ["Id","FirstName","LastName", "Country"];
 const tableData = [
@@ -90,9 +87,6 @@ const tableData = [
 ];
 export default {
   components: {
-    EditProfileForm,
-    UserCard,
-	MembersCard,
 	PaperTable
   },
   data() {
@@ -102,21 +96,7 @@ export default {
 				subTitle: "Here is a subtitle for this table",
 				columns: [...tableColumns],
 				data: [...tableData],
-			},
-			details: [
-				{
-					title: "id",
-					subTitle: "Files",
-				},
-				{
-					title: "firstname",
-					subTitle: "Used",
-				},
-				{
-					title: "24,6$",
-					subTitle: "Spent",
-				},
-			],
+			}
 		};
 	},
 };
