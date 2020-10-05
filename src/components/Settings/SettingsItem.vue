@@ -28,11 +28,6 @@ export default {
 			itemData: this.item,
 		};
 	},
-	methods: {
-		handleChecked(item) {
-			console.log(item);
-		},
-	},
 };
 </script>
 

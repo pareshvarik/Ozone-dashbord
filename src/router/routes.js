@@ -6,10 +6,6 @@ import NotFound from "@/pages/NotFoundPage.vue";
 import Dashboard from "@/pages/Dashboard.vue";
 import UserProfile from "@/pages/UserProfile.vue";
 import Notifications from "@/pages/Notifications.vue";
-// import Icons from "@/pages/Icons.vue";
-// import Maps from "@/pages/Maps.vue";
-// import Typography from "@/pages/Typography.vue";
-// import TableList from "@/pages/TableList.vue";
 import Settings from "@/pages/Settings.vue";
 import Gallery from "@/pages/Gallery.vue";
 import Video from "@/pages/Video.vue"
@@ -42,26 +38,6 @@ const routes = [{
         name: "video",
         component: Video
       },
-      // {
-      //   path: "icons",
-      //   name: "icons",
-      //   component: Icons
-      // },
-      // {
-      //   path: "maps",
-      //   name: "maps",
-      //   component: Maps
-      // },
-      // {
-      //   path: "typography",
-      //   name: "typography",
-      //   component: Typography
-      // },
-      // {
-      //   path: "table-list",
-      //   name: "table-list",
-      //   component: TableList
-      // },
       {
         path: "settings",
         name: "settings",

@@ -1,53 +1,42 @@
 <template>
 	<div class="wrapper">
-		<side-bar :background-color="$root.settings.darkMode.status ? 'black' : 'white'"
-				   v-if="$root.settings.sideMenu.status">
+		<side-bar :background-color="$root.settings.darkMode.status ? 'black' : 'white'" v-if="$root.settings.sideMenu.status">
 			<template slot="links">
 				<sidebar-link
 					to="/dashboard"
 					name="Dashboard"
 					icon="ti-panel"
 				/>
+				
 				<sidebar-link
 					to="/stats"
 					name="Users"
 					icon="ti-user"
 					v-if="$root.settings.userProfile.status"
 				/>
-				<!-- <sidebar-link
-					to="/table-list"
-					name="Table List"
-					icon="ti-view-list-alt"
-				/> -->
+				
+				
 				<sidebar-link
 					to="/gallery"
-					name="gallery"
+					name="Gallery"
 					icon="ti-image"
 					v-if="$root.settings.gallery.status"
 				/>
 				<sidebar-link
 					to="/video"
-					name="video"
+					name="Video"
 					icon="ti-control-play"
 					v-if="$root.settings.video.status"
 				/>
-				<!-- <sidebar-link to="/typography" name="Typography" icon="ti-text"/>
-        <sidebar-link to="/icons" name="Icons" icon="ti-pencil-alt2"/>
-        <sidebar-link to="/maps" name="Map" icon="ti-map"/> -->
+				
 				<sidebar-link
 					to="/notifications"
 					name="Notifications"
 					icon="ti-bell"
-
 				/>
 			</template>
 			<mobile-menu>
-				<!-- <li class="nav-item">
-					<a class="nav-link">
-						<i class="ti-panel"></i>
-						<p>Stats</p>
-					</a>
-				</li> -->
+				
 				<drop-down
 					class="nav-item"
 					title="5 Notifications"
@@ -75,10 +64,11 @@
 			<dashboard-content
 				@click.native="toggleSidebar"
 				class="d-flex flex-grow-1"
+				
 			>
 			</dashboard-content>
 
-			<!-- <content-footer></content-footer> -->
+			
 		</div>
 	</div>
 </template>
@@ -86,13 +76,11 @@
 </style>
 <script>
 import TopNavbar from "./TopNavbar.vue";
-import ContentFooter from "./ContentFooter.vue";
 import DashboardContent from "./Content.vue";
 import MobileMenu from "./MobileMenu";
 export default {
 	components: {
 		TopNavbar,
-		ContentFooter,
 		DashboardContent,
 		MobileMenu,
 	},
