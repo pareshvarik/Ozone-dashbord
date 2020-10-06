@@ -127,9 +127,7 @@ export default {
       return `table-${this.type}`;
     },
   },
-  // created(){
-  //   console.log("data value",this.data);
-  // },
+  
   methods: {
     handleModalClose(){
       this.showModal=false;
