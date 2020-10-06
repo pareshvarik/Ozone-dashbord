@@ -1,7 +1,7 @@
 <template>
-  <div id="video">
+  <div id="player">
     <div class="test-player-wrap">
-      <vue-core-video-player  loop :src="source" title="Video Player" :view-core="viewCore" autoplay></vue-core-video-player>
+      <vue-core-video-player  loop :src="source" title="Video Player" autoplay></vue-core-video-player>
     </div>
     <button @click="change"> Change Source</button>
   </div>
@@ -40,7 +40,7 @@ const cover = 'https://img1.wxzxzj.com/maxresdefault.jpg'
 // const videoSource2 = 'http://techslides.com/demos/sample-videos/small.mp4'
 
 export default {
-  name: 'video',
+  name: 'Video',
   data () {
     return {
       source: videoSource2,
