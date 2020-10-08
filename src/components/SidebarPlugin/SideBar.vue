@@ -26,7 +26,7 @@
 					class="simple-text"
 				>
 					<!-- <div class="logo-img"> -->
-						<img img
+						<img id="srcimg"
 							src="@/assets/img/vue-logo2.jpg"
 							alt=""
 						>
@@ -164,7 +164,7 @@ export default {
 /* .sidebar{
 	width: 100px;
 } */
-img{
+#srcimg{
 	max-width:25%;
 	height:auto;
 }
