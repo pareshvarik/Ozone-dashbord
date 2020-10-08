@@ -30,11 +30,11 @@
 							src="@/assets/img/vue-logo2.jpg"
 							alt=""
 						>
-					<!-- </div> -->
+					
 					<span class="title">
 						{{title}}
 					</span>
-					
+					<!-- </div> -->
 				</a>
 			</div>
 			<slot>
