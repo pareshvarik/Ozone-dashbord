@@ -41,6 +41,13 @@
     "defaultAccess": false,
     "status": true
   },
+  "weather": {
+    "name": "weather",
+    "title": "Weather",
+    "description": "Show or hide weather from the application",
+    "defaultAccess": false,
+    "status": true
+  },
   "video": {
     "name": "video",
     "title": "Video",

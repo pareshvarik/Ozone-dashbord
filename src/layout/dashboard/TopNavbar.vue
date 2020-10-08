@@ -16,9 +16,9 @@
 				<span class="navbar-toggler-bar"></span>
 				<span class="navbar-toggler-bar"></span>
 			</button>
-			<div class="collapse navbar-collapse">
+			 <div class="collapse navbar-collapse">
 				<ul class="navbar-nav ml-auto">
-					<drop-down
+					<!--<drop-down
 						class="nav-item"
 						title="5 Notifications"
 						title-classes="nav-link"
@@ -44,7 +44,7 @@
 							class="dropdown-item"
 							href="#"
 						>Another notification</a>
-					</drop-down>
+					</drop-down> -->
 					<li class="nav-item">
 						<router-link
 							to="settings"
@@ -56,7 +56,7 @@
 							</p>
 						</router-link>
 					</li>
-					<li class="nav-item">
+					<!-- <li class="nav-item">
 						<a
 							role="button"
 							class="nav-link"
@@ -66,7 +66,7 @@
 								{{$root.settings.adminRole.status ? 'Admin' : 'Normal'}} User
 							</p>
 						</a>
-					</li>
+					</li> -->
 				</ul>
 			</div>
 		</div>

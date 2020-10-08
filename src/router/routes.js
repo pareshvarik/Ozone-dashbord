@@ -8,7 +8,8 @@ import UserProfile from "@/pages/UserProfile.vue";
 import Notifications from "@/pages/Notifications.vue";
 import Settings from "@/pages/Settings.vue";
 import Gallery from "@/pages/Gallery.vue";
-import Video from "@/pages/Video.vue"
+import Video from "@/pages/Video.vue";
+import Weather from "@/pages/Weather.vue";
 const routes = [{
     path: "/",
     component: DashboardLayout,
@@ -37,6 +38,11 @@ const routes = [{
         path: "video",
         name: "video",
         component: Video
+      },
+      {
+        path: "weather",
+        name: "weather",
+        component: Weather
       },
       {
         path: "settings",

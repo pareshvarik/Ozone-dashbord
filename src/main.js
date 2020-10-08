@@ -21,6 +21,7 @@ import PaperDashboard from "./plugins/paperDashboard";
 import "vue-notifyjs/themes/default.css";
 import VueCoreVideoPlayer from 'vue-core-video-player'
 import { ChartPlugin } from "@syncfusion/ej2-vue-charts";
+import './registerServiceWorker'
 Vue.use(ChartPlugin);
 Vue.use(VueCoreVideoPlayer)
 

@@ -23,6 +23,12 @@
 					v-if="$root.settings.gallery.status"
 				/>
 				<sidebar-link
+					to="/weather"
+					name="Weather"
+					icon="ti-shine"
+					v-if="$root.settings.weather.status"
+				/>
+				<sidebar-link
 					to="/video"
 					name="Video"
 					icon="ti-control-play"
