@@ -15,7 +15,7 @@
 		>
 			<div
 				v-if="$root.settings.sideMenuLogo.status"
-				class="logo"
+				class="sidebar-header"
 				:class="{
         'd-none': !$sidebar.showLogo,
         'd-block' : $sidebar.showLogo
@@ -25,13 +25,16 @@
 					href="#"
 					class="simple-text"
 				>
-					<div class="logo-img">
-						<img
-							src="@/assets/img/vue-logo.png"
+					<!-- <div class="logo-img"> -->
+						<img img
+							src="@/assets/img/vue-logo2.jpg"
 							alt=""
 						>
-					</div>
-					{{title}}
+					<!-- </div> -->
+					<span class="title">
+						{{title}}
+					</span>
+					
 				</a>
 			</div>
 			<slot>
@@ -63,7 +66,7 @@ export default {
 	props: {
 		title: {
 			type: String,
-			default: "Ozone Dashboard",
+			default: "Feature Toggle Dashboard",
 		},
 		backgroundColor: {
 			type: String,
@@ -153,4 +156,19 @@ export default {
 };
 </script>
 <style>
+/* .logo-img{
+	width:40px;
+	height:50px;
+	border-radius: 50%;
+} */
+/* .sidebar{
+	width: 100px;
+} */
+img{
+	max-width:25%;
+	height:auto;
+}
+.title{
+	color:rgb(230, 21, 21);
+}
 </style>

@@ -1,7 +1,7 @@
 {
   "adminRole": {
     "name": "adminRole",
-    "title": "User Role",
+    "title": "Admin",
     "description": "Enable or disable admin behaviour",
     "defaultAccess": true,
     "status": false

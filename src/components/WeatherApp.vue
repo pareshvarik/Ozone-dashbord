@@ -67,12 +67,12 @@ main {
     background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('../assets/images/night.jpg');
 }
 
-@media screen and (min-width: 450px) {
+/* @media screen and (min-width: 450px) { */
     main {
-        width: 330px;
-        height: 600px;
-
+        width: 600px;
+        height: 750px;
+        margin-right: 200px;
         border-radius: 5px;
     }
-}
+/* } */
 </style>

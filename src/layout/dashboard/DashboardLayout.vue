@@ -9,7 +9,7 @@
 				/>
 				
 				<sidebar-link
-					to="/stats"
+					to="/users"
 					name="Users"
 					icon="ti-user"
 					v-if="$root.settings.userProfile.status"

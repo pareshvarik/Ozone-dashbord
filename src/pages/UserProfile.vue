@@ -92,8 +92,8 @@ export default {
   data() {
 		return {
 			table1: {
-				title: "Stripped Table",
-				subTitle: "Here is a subtitle for this table",
+				title: "User's List",
+				subTitle: "",
 				columns: [...tableColumns],
 				data: [...tableData],
 			}
