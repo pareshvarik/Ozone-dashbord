@@ -2,21 +2,18 @@
   <div id="weather">
     <div class="weather" :class="period">
       <WeatherApp :class="period"></WeatherApp>
-      <AppCredits :year="year" :class="period"></AppCredits>
-    </div>
+      </div>
   </div>
 </template>
 
 <script>
 import WeatherApp from '../components/WeatherApp.vue'
-import AppCredits from '../components/AppCredits.vue'
 
 export default {
   name: 'Weather',
 
   components: {
-    WeatherApp,
-    AppCredits
+    WeatherApp
   },
 
   data() {
