@@ -1,65 +1,48 @@
 <template>
   <div id="player">
     <div class="test-player-wrap">
-      <vue-core-video-player  loop :src="source" title="Video Player" autoplay></vue-core-video-player>
+      <vue-core-video-player
+        loop
+        :src="source"
+        title="Video Player"
+        autoplay
+      ></vue-core-video-player>
     </div>
-    <button @click="change"> Change Source</button>
+    <button @click="change">Change Source</button>
   </div>
 </template>
 
 <script>
-const videoSource = [ 
+const videoSource = [
   {
-    src: 'https://media.vued.vanthink.cn/y2mate.com%20-%20Sparkle%20_%20Your%20Name%20AMV_K_7To_y9IAM_240p.mp4',
-    resolution: '240p'
+    src:
+      "https://media.vued.vanthink.cn/y2mate.com%20-%20Sparkle%20_%20Your%20Name%20AMV_K_7To_y9IAM_240p.mp4",
+    resolution: "240p",
   },
-  // {
-  //   src: 'https://media.vued.vanthink.cn/y2mate.com%20-%20Sparkle%20_%20Your%20Name%20AMV_K_7To_y9IAM_360p.mp4',
-  //   resolution: '360p'
-  // },
-  //  {
-  //   src: 'https://media.vued.vanthink.cn/sparkle_your_name_am720p.mp4',
-  //   resolution: '720p'
-  // }, {
-  //   src: 'https://media.vued.vanthink.cn/y2mate.com%20-%20sparkle_your_name_amv_K_7To_y9IAM_1080p.mp4',
-  //   resolution: '1080p'
-  // }
-]
-// const videoSource = [
-//   {
-//     src: 'https://media.vued.vanthink.cn/sparkle_your_name_am720p.webm',
-//     type: 'video/webm'
-//   },
-//   {
-//     src: 'https://media.vued.vanthink.cn/sparkle_your_name_am720p.mp4',
-//     type: 'video/mp4'
-//   }
-// ]
-const videoSource2 = 'https://media.vued.vanthink.cn/the_garden_of_words_trailer_english__1080p.mp4'
-const cover = 'https://img1.wxzxzj.com/maxresdefault.jpg'
-// const videoSource2 = 'http://techslides.com/demos/sample-videos/small.mp4'
+];
+const videoSource2 =
+  "https://media.vued.vanthink.cn/the_garden_of_words_trailer_english__1080p.mp4";
+const cover = "https://img1.wxzxzj.com/maxresdefault.jpg";
 
 export default {
-  name: 'Video',
-  data () {
+  name: "Video",
+  data() {
     return {
       source: videoSource2,
-      cover: cover
-      // viewCore: [ () => { console.log('view core test') } ]
-    }
+      cover: cover,
+    };
   },
   methods: {
-    change () {
-      this.source = videoSource
-    }
-    
-  }
-}
+    change() {
+      this.source = videoSource;
+    },
+  },
+};
 </script>
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;

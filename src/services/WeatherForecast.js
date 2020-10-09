@@ -1,8 +1,4 @@
-/*
-* Service that fetch and parse weather forecast from openweathermap.org.
-*
-* @author Jim Merioles <jimwisleymerioles@gmail.com>
-*/
+
 class WeatherForecast {
     /*
     * Create WeatherForecast instance.
@@ -68,25 +64,25 @@ class WeatherForecast {
     */
     getErrorData() {
         return {
-                clouds: { all: 0 },
-                wind: { speed: 0 },
-                main: {
-                    humidity: 0,
-                    temp: 0,
-                    temp_max: 0,
-                    temp_min: 0,
-                },
-                weather: [
-                    {
-                        id: 0,
-                        description: `There's a problem at the weather forecast server ¯\\_(ツ)_/¯`
-                    }
-                ],
-                name: null,
-                sys: {
-                    country: null
+            clouds: { all: 0 },
+            wind: { speed: 0 },
+            main: {
+                humidity: 0,
+                temp: 0,
+                temp_max: 0,
+                temp_min: 0,
+            },
+            weather: [
+                {
+                    id: 0,
+                    description: `There's a problem at the weather forecast server ¯\\_(ツ)_/¯`
                 }
-            };
+            ],
+            name: null,
+            sys: {
+                country: null
+            }
+        };
     }
 
     /*
@@ -126,15 +122,15 @@ class WeatherForecast {
     * @param {Number} id - Weather ID.
     */
     getWeatherIcon(id) {
-        if(this.isThunderstorm(id)) {
+        if (this.isThunderstorm(id)) {
             return require('../assets/icons/weather/thunderstorm.svg');
         }
 
-        if(this.isDrizzle(id) || this.isRain(id)) {
+        if (this.isDrizzle(id) || this.isRain(id)) {
             return require('../assets/icons/weather/rain.svg');
         }
 
-        if(this.isSnow(id)) {
+        if (this.isSnow(id)) {
             return require('../assets/icons/weather/snow.svg');
         }
 
@@ -156,7 +152,7 @@ class WeatherForecast {
     * @param {Number} id - Weather ID.
     */
     isDrizzle(id) {
-        return id >299 && id < 322;
+        return id > 299 && id < 322;
     }
 
     /*

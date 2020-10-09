@@ -2,24 +2,24 @@
   <div id="weather">
     <div class="weather" :class="period">
       <WeatherApp :class="period"></WeatherApp>
-      </div>
+    </div>
   </div>
 </template>
 
 <script>
-import WeatherApp from '../components/WeatherApp.vue'
+import WeatherApp from "../components/WeatherApp.vue";
 
 export default {
-  name: 'Weather',
+  name: "Weather",
 
   components: {
-    WeatherApp
+    WeatherApp,
   },
 
   data() {
     return {
-      date: new Date
-    }
+      date: new Date(),
+    };
   },
 
   computed: {
@@ -30,15 +30,15 @@ export default {
     period() {
       let hour = this.date.getHours();
 
-      return (hour > 5 && hour < 18)? 'app--day': 'app--night';
-    }
-  }
-}
+      return hour > 5 && hour < 18 ? "app--day" : "app--night";
+    },
+  },
+};
 </script>
 
 <style>
 /** Global **/
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 
 * {
   box-sizing: border-box;
@@ -47,7 +47,7 @@ export default {
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: rgba(255, 255, 255, 0.9);
@@ -56,7 +56,7 @@ body {
 a {
   text-decoration: none;
   color: inherit;
-  transition: color .2s ease-in;
+  transition: color 0.2s ease-in;
 }
 
 /** App **/
@@ -71,12 +71,12 @@ a {
 
 .weather--day {
   /*background: linear-gradient(to bottom right, #6CB9C8, #6CB9C8) no-repeat;*/
-  background-color: #6CB9C8;
+  background-color: #6cb9c8;
 }
 
 .weather--night {
   /*background: linear-gradient(to bottom right, #484F60, #484F60) no-repeat;*/
-  background-color: #484F60;
+  background-color: #484f60;
 }
 
 .weather--day a:hover {

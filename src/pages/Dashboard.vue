@@ -286,7 +286,7 @@ export default {
           footerIcon: "ti-reload",
         },
       ],
-      
+
       annotationTemplate: function () {
         return {
           template: Vue.component("annotationTemplate", {

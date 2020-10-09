@@ -18,8 +18,7 @@
                 {{ itemValue(item, column) }}
               </td>
               <a @click="userDetails(item)" class="link">View Details</a>
-              <!-- <button @click="userDetails(item)">show</button> -->
-            </slot>
+              </slot>
           </tr>
         </tbody>
       </table>
